@@ -1,0 +1,561 @@
+s:34677:" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head><title>
+	多伦多机场接送--春风接送在线自动预订
+</title><link href="../STAT/CSV/mainstyles.css" rel="stylesheet" type="text/css" />
+    <script language="javascript"  type ="text/javascript"  src ="../Scripts/Calendar.js"> </script>
+    <script language = "javascript" type = "text/javascript" >
+
+        function ToogleChildrenAge() {
+
+            var childAgeSelect = document.getElementById("ddlChildAge");
+            var rdolist = document.getElementsByName("rblCarryChild");
+            if (rdolist[1].checked)
+                childAgeSelect.disabled = false;
+            if (rdolist[2].checked)
+                childAgeSelect.disabled = true;
+        }
+    	    
+    	
+    </script> 
+	
+	
+</head>
+
+<body>
+
+<div class="style1" id="biglongframe"> 
+   
+    <form name="form1" method="post" action="http://localhost/mvc/index.php/index/index" id="form1">
+		<div>
+		  <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+		  <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+		  <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+		  <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjAyOTg4NDI0Mg9kFgICAw9kFggCAw8PFgIeB1Zpc2libGVoZGQCBw8QZGQWAWZkAgkPDxYCHgRUZXh0BUso5qCH5rOoPHNwYW4gc3R5bGU9ImZvbnQ6IDlwdDtjb2xvcjogcmVkIj4qPC9zcGFuPuWPt+eahOmhueebruS4jeiDveepuue8uilkZAILDxYCHwBnFgYCDA8PFgIfAQUM5o6l5py65pel5pyfZGQCDg8PFgIfAQUM552A6ZmG5pe26Ze0ZGQCHA8QZGQWAWZkZPLf7vNlCHqEhzbm/5Oh8TvnYGIf" />
+		</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWVwLJge+CBAK995TfBgLfzbryAwLnu8+0BgKqm7/MCgKdlcWpAgK5h62pDwLEku2wCAKjneGjDQKE8/26DAKb3rGpCQLRy5NmAs7Lk2YCz8uTZgLMy5NmAs3Lk2YCysuTZgLLy5NmAsjLk2YC2cuTZgLWy5NmAs7L02UCzsvfZQLOy9tlAs7L52UCzsvjZQLOy+9lAs7L62UCzsv3ZQLOy7NmAs7Lv2YCz8vTZQLPy99lAs/L22UCz8vnZQLWy6+UDQLNy6+UDQLJy++XDQLJy9OXDQLIy++XDQLIy9OXDQLLy++XDQLLy9OXDQLKy++XDQLKy9OXDQLNy++XDQLNy9OXDQL0jYfxAwLqoPPlBwLyk6z7CQLwk6z7CQL2k6z7CQLkk6z7CQLujYhWAui5wcAPAozpmYwPAsXWgLQBAqWV9dQOArqV9dQOAriV9dQOAr+V9dQOAq2V9dQOAreRvdUOAtPB5ZkOApr+/CECmZLvFQL9wrdZArT9ruEOAo3bt9UMApLbt9UMApPbt9UMApDbt9UMApHbt9UMApbbt9UMArn1hM0IArj1hM0IAr/1hM0IAr31hM0IAur19OYHApm6m6cJArHvjIECAtvHzpsCAquPyOsPApHhltoCAsKEnK0HApy3uJIMApD0z+sFkwrJk6tWO1sIatMUazdYSzUBN28=" />
+</div>
+   
+    
+    <table id="Table2" cellspacing="1" cellpadding="1" width="100%" border="0" >
+        <tr>
+            <td style="width: 100%">
+                <table id="Table1" cellspacing="3" cellpadding="0" border="0" style="width: 100%">
+                  
+                    <tr>
+                        <td align="center" colspan="7">
+                            <span id="lblSubHeader" class="form_header">自动在线预订</span></td>
+                        
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="left" colspan="6">                                                   
+                                                    
+                        </td>
+                        <td align="left" style="width: 22px">
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                       <td>
+                             <span class="warning_text">&nbsp;</span><span id="Label2" class="label_bold">我需要:</span></td>
+                        <td style ="white-space: noWrap" colspan="3" >
+                            <table id="rblServiceCategory" border="0">
+	<tr>
+		<td><input id="rblServiceCategory_0" type="radio" name="rblServiceCategory" value="1"  checked="checked" /><label for="rblServiceCategory_0">接机</label></td>
+		
+		<td><input id="rblServiceCategory_1" type="radio" name="rblServiceCategory" value="2" onClick="location.href='http://localhost/mvc/index.php/admin/index'"/><label for="rblServiceCategory_1">送机</label></td>
+		
+		<td><input id="rblServiceCategory_2" type="radio" name="rblServiceCategory" value="3" onClick="location.href='http://localhost/mvc/index.php/main/index'" /
+		
+		><label for="rblServiceCategory_2">一般接送或搬家</label></td>
+	</tr>
+</table> 
+                            
+                        </td>
+                        <td style ="white-space: noWrap" colspan="3" align="left"> <span id="showTripId" style="font-size:9pt;">(标注<span style="font: 9pt;color: red">*</span>号的项目不能空缺)</span> </td>
+                    </tr>
+                    
+                    <tr>
+                        <td  align="left" colspan="7">
+                            <div id="divInputData">
+                            <table> 
+                                    <tr class="form_sub_header" style="width: 100%">
+                                        <td colspan="7">
+                                            <span id="Label5" class="BlockTitle">联系信息</span>
+                                        </td>
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td align="left" style ="white-space: noWrap">
+                                            <span class="warning_text">*</span>
+                                            <span id="lblFirstName" class="label_bold">姓氏</span></td>
+                                        <td align="left">
+                                           <input name="txtLastName" type="text" maxlength="30" id="txtLastName" tabindex="1" class="input_text" /></td>                                   
+                                         <td align="left" style ="white-space: noWrap">
+                                            <span class="warning_text">*</span>
+                                            <span id="lblLastName" class="label_bold">名字</span></td>
+                                        <td align="left">
+                                            <input name="txtFirstName" type="text" maxlength="30" id="txtFirstName" tabindex="2" class="input_text" /></td>
+                                        <td align="left">
+                                            <span class="warning_text">&nbsp;</span><span id="lblPhone" class="label_bold">电话号码</span>
+                                        </td>
+                                        <td style ="white-space: noWrap" align="left">
+                                            <input name="txtPhone" type="text" id="txtPhone" tabindex="3" class="input_text" />
+                                        </td>
+                                        <td>&nbsp;</td>
+                                    </tr>
+                                            
+                                            
+                                    <tr>
+                                       
+                                        <td>
+                                            <span class="warning_text">&nbsp;</span><span id="Label1" class="label_bold">手机号码</span></td>
+                                        <td style ="white-space: noWrap">
+                                            <input name="txtCellPhone" type="text" id="txtCellPhone" tabindex="4" class="input_text" />
+                                        </td>
+                                        <td>
+                                             <span class="warning_text">*</span><span id="Label17" class="label_bold">电子信箱</span></td>
+                                        <td style ="white-space: noWrap" colspan="3" >
+                                            <input name="txtEmail" type="text" id="txtEmail" tabindex="5" class="input_text" />
+                                        </td>
+                                         <td>&nbsp;</td>
+ 
+                                    </tr>
+                                <tr class="form_sub_header" style="width: 100%">
+                                    <td align="left" colspan="7"> 
+                                        <span id="Label14" class="BlockTitle">旅行信息</span></td>
+                                </tr> 
+                                
+                                <tr>
+                                    <td align="left" style ="white-space: noWrap">
+                                        <span class="warning_text">*</span>
+                                        <span id="lblServeDate" class="label_bold">接机日期</span></td>
+                                    <td align="left">
+                                        <input name="txtServeDate" type="text" value="年/月/日" maxlength="30" id="txtServeDate" tabindex="6" title="Click right side image to choose a start date." class="input_text" /> 
+                                          <img id = "img1"  class="calendar" src="../Images/SmallCalendar.gif"  alt = "Pick a date" onclick="displayDatePicker('txtServeDate', this, 'ymd', '/' );" />  
+                                    </td>                                  
+                                    <td align="left" style ="white-space: noWrap">
+                                        <span class="warning_text">*</span>                                                   
+                                         <span id="lblServeTime" class="label_bold">着陆时间</span>
+                                    </td>
+                                    <td align="left">
+                                    
+                                         <select name="ddlPickHr" id="ddlPickHr" tabindex="7">
+	<option value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">5</option>
+	<option value="6">6</option>
+	<option value="7">7</option>
+	<option value="8">8</option>
+	<option value="9">9</option>
+	<option value="10">10</option>
+	<option value="11">11</option>
+	<option value="12">12</option>
+	<option value="13">13</option>
+	<option value="14">14</option>
+	<option value="15">15</option>
+	<option value="16">16</option>
+	<option value="17">17</option>
+	<option selected="selected" value="18">18</option>
+	<option value="19">19</option>
+	<option value="20">20</option>
+	<option value="21">21</option>
+	<option value="22">22</option>
+	<option value="23">23</option>
+
+</select> 时
+                                        <select name="ddlPickMin" id="ddlPickMin" tabindex="7">
+	<option value="0">0</option>
+	<option value="5">5</option>
+	<option value="10">10</option>
+	<option value="15">15</option>
+	<option value="20">20</option>
+	<option value="25">25</option>
+	<option value="30">30</option>
+	<option value="35">35</option>
+	<option value="40">40</option>
+	<option selected="selected" value="45">45</option>
+	<option value="50">50</option>
+	<option value="55">55</option>
+
+</select> 分
+                                    </td>
+                                     <!-- common in case 1,2 , show  -->
+                                    
+                                   
+                                        <td align="left" style ="white-space: noWrap">
+                                            <span class="warning_text">*</span>
+                                            <span id="lblFlightNum" class="label_bold">航班号</span></td>
+                                        <td align="left">
+                                            <input name="txtFlightNum" type="text" maxlength="30" id="txtFlightNum" tabindex="8" class="input_text" /></td>
+                                        <td width = "20px" >&nbsp;</td>
+                                       
+                                    
+                                  </tr>                                 
+                                 <tr>
+                                    <td align="left" style ="white-space: noWrap">
+                                        <span class="warning_text">*</span>
+                                        <span id="Label22" class="label_bold">人数</span></td>
+                                    <td align="left">
+                                        <input name="txtNumOfPeople" type="text" maxlength="30" id="txtNumOfPeople" tabindex="9" class="input_text" />人</td>
+                                     <td align="left" style ="white-space: noWrap">
+                                        <span class="warning_text">*</span>
+                                        <span id="Label30" class="label_bold">行李件数</span></td>
+                                    <td align="left">
+                                           <select name="ddlNumOfLuggage" id="ddlNumOfLuggage" tabindex="10">
+	<option selected="selected" value="2">&lt;= 2 件</option>
+	<option value="4">3-4 件</option>
+	<option value="6">5-7 件</option>
+	<option value="8">&gt; 8 件</option>
+
+</select>
+                                            
+                                     </td>
+                                    <td align="left" style ="white-space: noWrap">
+                                        <span class="warning_text">&nbsp;</span>
+                                        <span id="Label31" class="label_bold">行李大小?</span></td>
+                                    <td align="left">
+                                      <input name="txtSizeOfLuggage" type="text" maxlength="30" id="txtSizeOfLuggage" tabindex="11" class="input_text" />                                                        
+                                    </td>
+                                     <td>&nbsp;</td>
+                                </tr>
+                                            
+                                <tr>
+                                    <td align="left" style ="white-space: noWrap">
+                                       <span class="warning_text">&nbsp;</span>
+                                        <span id="Label24" class="label_bold">有否带小孩?</span></td>
+                                    <td align="left">
+                                         <table id="rblCarryChild" onClick="javascript:ToogleChildrenAge();" border="0">
+	<tr>
+		<td><input id="rblCarryChild_0" type="radio" name="rblCarryChild" value="true" tabindex="12" /><label for="rblCarryChild_0">有</label></td><td><input id="rblCarryChild_1" type="radio" name="rblCarryChild" value="false" tabindex="12" /><label for="rblCarryChild_1">否</label></td>
+	</tr>
+</table>                                    
+                                    </td>
+                                    <td align="left" style ="white-space: noWrap" id="tdAgeLabel">
+                                        <span class="warning_text">&nbsp;</span>
+                                        <span id="Label26" class="label_bold">小孩年龄</span></td>
+                                    <td align="left" id="tdAgeDDL" >
+                                        <select name="ddlChildAge" id="ddlChildAge" disabled="disabled" tabindex="13">
+											<option selected="selected" value="0"><12 个月</option>
+											<option value="1">&lt; 1 个月</option>
+											<option value="3">1-3 个月</option>
+											<option value="6">3-7 个月</option>
+											<option value="8">&gt;7 个月</option> 
+										</select>  
+                                    </td>
+									
+                                    <td align="left" id="tdAgeDDL" >
+                                        <select name="ddlChildAge2" id="ddlChildAge"  tabindex="13">
+											<option selected="selected" value="0">请选取一个年龄段</option>
+										
+											<option value="1">1 岁</option>
+											<option value="2">2 岁</option>
+											<option value="3">&gt;3 岁</option> 
+										</select>  
+                                    </td>
+
+                                    <td align="left" id="tdAgeDDL" >
+                                        <select name="ddlChildAge3" id="ddlChildAge"  tabindex="13">
+											<option selected="selected" value="0">请选取一个年龄段</option>
+											<option value="1">&lt;3-7 岁</option>
+											<option value="3">3 岁</option>
+											<option value="4">4 岁</option>
+											<option value="5">5 岁</option>
+											<option value="6">6 岁</option>
+											<option value="7">&gt;7 岁</option> 
+										</select>  
+                                    </td>
+									
+                                    <td align="left" id="tdAgeDDL" >
+                                        <select name="ddlChildAge4" id="ddlChildAge"  tabindex="13">
+											<option selected="selected" value="0">请选取一个年龄段</option>
+											<option value="1">&lt; &gt;7 岁</option>
+											<option value="7">7 岁</option> 
+										</select>  
+                                    </td>
+									
+									
+                                     <td align="left" style ="white-space: noWrap">
+                                       <span class="warning_text">&nbsp;</span>
+                                        <span id="Label20" class="label_bold">愿否共乘?</span></td>
+                                    <td align="left">
+                                         <table id="rblCanAeroPool" border="0">
+	<tr>
+		<td><input id="rblCanAeroPool_0" type="radio" name="rblCanAeroPool" value="true" tabindex="14" /><label for="rblCanAeroPool_0">愿意</label></td><td><input id="rblCanAeroPool_1" type="radio" name="rblCanAeroPool" value="false" tabindex="14" /><label for="rblCanAeroPool_1">不愿</label></td>
+	</tr>
+</table>  
+                                    </td>
+                                    <td>&nbsp;</td>                                              
+                                </tr>
+                                            
+                                 <!-- only shown different in case 1, 2 -->
+                                
+                                <tr>
+                                    <td align="left" style ="white-space: noWrap">
+                                        <span class="warning_text">&nbsp;</span>
+                                        <span id="Label33" class="label_bold">首次移民登陆?</span></td>
+                                    <td align="left">
+                                        <table id="rblIsFirstLand" border="0">
+	<tr>
+		<td><input id="rblIsFirstLand_0" type="radio" name="rblIsFirstLand" value="true" tabindex="17" /><label for="rblIsFirstLand_0">是</label></td><td><input id="rblIsFirstLand_1" type="radio" name="rblIsFirstLand" value="false" tabindex="17" /><label for="rblIsFirstLand_1">否</label></td>
+	</tr>
+</table>  
+                                    </td>
+                                    <td align="left" style ="white-space: noWrap">
+                                        <span class="warning_text">&nbsp;</span>
+                                        <span id="Label15" class="label_bold">带烟情况</span></td>
+                                    <td align="left">
+                                         <select name="ddlBringCiga" id="ddlBringCiga" tabindex="18">
+	<option selected="selected" value="0">0</option>
+	<option value="1">1</option>
+	<option value="2">2</option>
+	<option value="3">3</option>
+	<option value="4">4</option>
+	<option value="5">&gt;5</option>
+
+</select>条
+                                    </td>
+                                </tr>
+                                
+                                
+                                            <!--  end of in case 1, 2 -->                                           
+                                  
+                                         
+                                            
+                                <tr class="form_sub_header" style="width: 100%">
+                                    <td colspan="7">
+                                        <span id="Label9" class="BlockTitle">出发地信息</span></td>
+                                </tr>
+                                <!-- in case 1    -->
+                                 
+                                 <tr>
+                                    <td  align="left">
+                                        <span class="warning_text">&nbsp;</span><span id="Label4" class="label_bold">到达航站楼</span>    
+                                    </td>
+                                    <td colspan="4" align="left"> 
+										<select name="ddlFromTerminal">
+										   											<option  value="1">  Toronto Pearson international Airport -- Terminal 1 （多伦多皮尔逊国际机场一号航站楼） </option>
+																						<option  value="2">  Toronto Pearson international Airport -- Terminal 3 （多伦多皮尔逊国际机场三号航站楼） </option>
+																						<option  value="3">  Toronto Central Island Airport（多伦多中央岛机场） </option>
+																						<option  value="4">  Buffalo Niagara International Airport （尼加拉瓜布法罗国际机场） </option>
+																					</select>  
+                                    </td>
+                                    <td colspan = "2">&nbsp;</td>
+                                </tr>
+                                 
+                                <!--end of in case 1 -->
+                                <!-- in case 2,3  -->
+                                 
+                                <!-- end of case 2,3 -->
+                                <tr class="form_sub_header" style="width: 100%">
+                                    <td colspan="7">
+                                        <span id="Label7" class="BlockTitle">目的地信息</span></td>
+                                </tr>
+                                <!-- only in case 2  --->
+                                 
+                                <!-- end of in case 2 -->                                
+                                
+                                <!-- in case 1, 3 --> 
+                                 
+                                <tr>
+                                   
+                                    <td colspan="7" align="left">
+                                         <table border="0" cellpadding="2" cellspacing="3" >
+                                            <tr>
+                                                <td style="width: 110px" ><span class="warning_text">&nbsp;</span><span id="Label11" class="label_bold">街道号码</span></td>
+                                                <td style="width: 190px" ><input name="txtAddress1To" type="text" maxlength="50" id="txtAddress1To" tabindex="23" class="input_text" /></td>
+                                                <td style="width: 100px">
+                                                    <span class="warning_text">*</span><span id="Label12" class="label_bold">街道名称</span></td>
+                                                <td style="width: 220px" >
+                                                    <input name="txtAddress2To" type="text" maxlength="50" id="txtAddress2To" tabindex="23" class="input_text" style="width:170px;" /></td>
+
+                                                <td style ="white-space: noWrap">
+                                                    <span class="warning_text">&nbsp;</span><span id="Label19" class="label_bold">邮编</span></td>
+                                                <td>
+                                                    <input name="txtZipTo" type="text" maxlength="10" id="txtZipTo" tabindex="24" class="input_text" />
+												</td>
+												
+                                            </tr>
+                                            <tr>
+                                                <td style="width: 110px">
+                                                    <span class="warning_text">*</span><span id="Label16" class="label_bold">省/州</span></td>
+                                                <td style="width: 190px">
+                                                    <input name="txtProvinceTo" type="text" value="ON" maxlength="30" id="txtProvinceTo" tabindex="24" class="input_text" /></td>
+                                                <td>
+                                                    <span class="warning_text">&nbsp;</span><span id="Label18" class="label_bold">国家</span></td>
+                                                <td>
+												<select name="txtCountryTo" onchange="choose(this.value);">
+												   												    <option  value="1" title ="CA" >  Canada </option>
+												    												    <option  value="2" title ="US" >  United States </option>
+												    												</select> 
+												</td>
+												
+                                                 <td style="width: 90px">
+                                                    <span class="warning_text">*</span><span id="Label13" class="label_bold">城市</span>
+												 </td>
+                                                <td style="width: 190px">
+														<select name="txtCityTo" id="article_id">
+														   															<option  value="1" title ="AB" >  Alberta </option>
+																														<option  value="2" title ="BC" >  British Columbia </option>
+																														<option  value="3" title ="MB" >  Manitoba </option>
+																														<option  value="4" title ="NB" >  New Brunswick </option>
+																														<option  value="5" title ="NL" >  Newfoundland and Labrador </option>
+																														<option  value="6" title ="NS" >  Nova Scotia </option>
+																														<option  value="7" title ="ON" >  Ontario </option>
+																														<option  value="8" title ="PE" >  Prince Edward Island  </option>
+																														<option  value="9" title ="QC" >  Quebec </option>
+																														<option  value="10" title ="SK" >  Saskatchewa </option>
+																														<option  value="11" title ="AL" >  Alabama </option>
+																														<option  value="12" title ="AK" >  Alaska </option>
+																														<option  value="13" title ="AZ" >  Arizona </option>
+																														<option  value="14" title ="AR" >  Arkansas </option>
+																														<option  value="15" title ="CA" >  California </option>
+																														<option  value="16" title ="CO" >  Colorado </option>
+																														<option  value="17" title ="CT" >  Connecticut </option>
+																														<option  value="18" title ="DE" >  Delaware </option>
+																														<option  value="19" title ="FL" >  Florida </option>
+																														<option  value="20" title ="GA" >  Georgia </option>
+																														<option  value="21" title ="HI" >  Hawaii </option>
+																														<option  value="22" title ="ID" >  Idaho </option>
+																														<option  value="23" title ="IL" >  Illinois </option>
+																														<option  value="24" title ="IN" >  Indiana </option>
+																														<option  value="25" title ="IA" >  Iowa </option>
+																														<option  value="26" title ="KS" >  Kansas </option>
+																														<option  value="27" title ="KY" >  Kentucky </option>
+																														<option  value="28" title ="LA" >  Louisiana </option>
+																														<option  value="29" title ="ME" >  Maine </option>
+																														<option  value="30" title ="MD" >  Maryland </option>
+																														<option  value="31" title ="MA" >  Massachusetts </option>
+																														<option  value="32" title ="MI" >  Michiga </option>
+																														<option  value="33" title ="MN" >  Minnesota </option>
+																														<option  value="34" title ="MS" >  Mississippi </option>
+																														<option  value="35" title ="MO" >  Missouri </option>
+																														<option  value="36" title ="MT" >  Montana </option>
+																														<option  value="37" title ="NE" >  Nebraska </option>
+																														<option  value="38" title ="NV" >  Nevada </option>
+																														<option  value="39" title ="NH" >  New Hampshire </option>
+																														<option  value="40" title ="NJ" >  New Jersey </option>
+																														<option  value="41" title ="NM" >  New Mexico </option>
+																														<option  value="42" title ="NY" >  New York </option>
+																														<option  value="43" title ="NC" >  North Carolina </option>
+																														<option  value="44" title ="ND" >  North Dakota </option>
+																														<option  value="45" title ="OH" >  Ohio </option>
+																														<option  value="46" title ="OK" >  Oklahoma </option>
+																														<option  value="47" title ="OR" >  Orego </option>
+																														<option  value="48" title ="PA" >  Pennsylvania </option>
+																														<option  value="49" title ="RI" >  Rhode Island </option>
+																														<option  value="50" title ="SC" >  South Carolina </option>
+																														<option  value="51" title ="SD" >  South Dakota </option>
+																														<option  value="52" title ="TN" >  Tennessee </option>
+																														<option  value="53" title ="TX" >  Texas </option>
+																														<option  value="54" title ="UT" >  Utah </option>
+																														<option  value="55" title ="VT" >  Vermont </option>
+																														<option  value="56" title ="VA" >  Virginia </option>
+																														<option  value="57" title ="WA" >  Washingto </option>
+																														<option  value="58" title ="WV" >  West Virginia </option>
+																														<option  value="59" title ="WI" >  Wisconsi </option>
+																														<option  value="60" title ="WY" >  Wyoming </option>
+																														<option  value="61" title ="DC" >  Washington DC </option>
+																													</select> 
+                                                </td>
+<script src="http://seo.chinaz.com/template/default/js/jquery.min.js" type="text/javascript"></script>
+<script>
+  function choose(v){
+   if(!v){
+     v=$("select[name='txtCountryTo']").val();
+   }
+  $('#article_id').empty();
+    $.post("http://localhost/mvc/index.php/index/ajax",{
+				total_id:v,
+				vip_password:0
+			  },
+			  function(data,status){
+				 var result = eval ("(" + data + ")");
+				     ln=result.body;
+				  var array=new Array();
+				  for(var i=0,doc; i<ln.length; i++) {
+				  
+				  
+				      doc='<option '; 
+					  doc+='value="'+ln[i].id+'">'+ln[i].name+'&nbsp;&nbsp;'+'</option>';
+					  $('#article_id').append(doc);
+				  }
+				 // console.log(array);
+				 
+			  });
+  }
+  $(function(){
+    choose(0);
+  });
+</script>
+
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                                 
+                                <!--end of case 1, 3 --> 
+                               
+                                                                
+                                <tr class="form_sub_header" style="width: 100%">
+                                    <td colspan="7">
+                                         <span class="warning_text">&nbsp;</span><span id="Label10" class="BlockTitle">备注</span></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6" style="white-space: nowrap; height: 60px; width: 98%">
+                                        <textarea name="txtNotes" rows="2" cols="20" id="txtNotes" tabindex="25" class="multiline_input_text" style="height:60px;width:100%;"></textarea>
+                                    </td>
+                                </tr>
+                               
+                              
+                                <tr>
+                                    <td colspan="5" height="40px" valign="middle" align="center">
+                                        <input type="submit" name="btnSave" value="立即预订" id="btnSave" tabindex="26" class="button" style="width:80px;" />&nbsp;
+                                        <input type="submit" name="btnCancel" value="取消" id="btnCancel" tabindex="26" class="button" style="width:80px;" />                        
+                                    </td>
+                                </tr>
+                                        
+                                        
+                               </table>
+                            </div>
+                        </td>
+                       
+                    </tr>                                
+                </table>
+            </td>
+        </tr>
+    </table>   
+ 
+    </form>
+</div>
+
+<div id="bottom"> Copy right &copy; 2010&nbsp;&nbsp;Springwind Car Service&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<!--<a href="sitemap.htm"> Sitemap</a>  --></div>
+</body>
+</html>
+";
